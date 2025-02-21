@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Mario = void 0;
-const MarioPequeno_1 = require("./MarioPequeno");
-class Mario {
+import { MarioPequeno } from "./MarioPequeno";
+export class Mario {
     constructor() {
-        this.estado = new MarioPequeno_1.MarioPequeno();
+        this.estado = new MarioPequeno();
     }
     mudarStatus(estado) {
         this.estado = estado;
@@ -22,4 +19,3 @@ class Mario {
         return this.estado.levarDano();
     }
 }
-exports.Mario = Mario;
